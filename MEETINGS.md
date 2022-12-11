@@ -1,5 +1,63 @@
 # OS-A SEE TG Meeting Minutes
 
+
+## 2022/11/30
+
+- [Meeting Presentation](https://docs.google.com/presentation/d/1nEMoR44drgV89j8fhUyhaaMzQb4yWNMYkuzHyeod8Ak)
+- Intended to have Andrei talk through his [proposal](https://docs.google.com/document/d/1X0TSbheEJjRGWhG2nzUnfIl_QcHWSuvd). However, something came up at last minute where Andrei could not attend. Meeting adjourned early.
+
+## 2022/11/15
+
+- [Meeting Presentation](https://docs.google.com/presentation/d/1bEA4mtRICCHNcEng2_9AJ-iV30Q0cCq9xk-xUHX_6MM)
+- Wanted explain how the OS-A SEE was originally envisioned depending on Profile in the underlying dependency chain.
+- Goals are:
+  - Targeting binary compatibility
+  - Rich OSes
+  - Focus on SW interface for booting along with runtime services
+  - Utilizes industry standards
+- How will future Platform specs utilize the other RISC-V specs?
+- Should incorporate existing HW in marketplace -- problematic if only future looking and wanting to align with Profile. Allow market to decide pairing of Profile with OS-A SEE? By way of Platform?
+- Andrei: remove hw dependencies. e.g. Profile dependency. Let Platform bring things together.
+- Paul: OS-A SEE wasn't originally intended to target IOT devices.
+- Andrei: wants to make it exteremely generic and applicable. Pyramid narrowing at top. Being ahead of HW not helpful in ARM land from past experience.
+
+## 2022/11/01
+
+- [Meeting Presentation](https://docs.google.com/presentation/d/1zrkMhqvDaZbaYSsG1PI8Dsvjxr0K0EwaOFzbmJwv2zM/)
+- ACPI vs DT - Andrei had a [thread](https://lists.riscv.org/g/tech-os-a-see/message/131) on the mailing list.
+  - Discussion and conclusions of the thread is have both ACPI and DT as options.
+  - Be agnostic. Let ecosystem decide based on system vendors’ products to drive ecosystem support.
+- EBBR vs Full UEFI
+  - Andrei: UEFI is BBR (Arm's Base Boot Requirements).
+  - EBBR relaxations/minimums but not allowed today in UEFI spec. AR: Understand the overlap and figure out how to separate out requirements in OS-A SEE spec.
+  - Sunil: in order to reduce UEFI concern -> if HW feature exists then protocol must be there. Can always fix UEFI spec, if needed.
+  - Andrei: focus on booting spec. Allow for "industry norms" using body of existing tests.
+- SEE prescriptive language for certain SBI extensions? Andrei suggest as you go up the composition stack one can't relax. One can only refine or restrict. Funnel mouth is big @ SEE level
+- Don't be in business of adding restrictions of areas of concern
+- Dependent spec versions would be indicated as >= version
+
+
+## 2022/10/18
+
+- [Meeting Presentation](https://docs.google.com/presentation/d/1utzR6UG6bAW8MZrgIuj42HVgvl87ll-cUKK0xnXdC1c/)
+- Rehashed premise of OS-A SEE trying to incoproate SW & HW requirements, if any. How to decide what is mandatory in OS-A SEE spec? HW and SW requirements exist in many existing and future RISC-V specs (Profiles and Platforms).
+- How are the RISC-V specifications composed? OS-A SEE on its own or part of a stack?
+- Greg brought up AiA - optional or required?
+  - Ramifications of big tent -- Optional requirements would lead to SW must support both. i.e. Imposing constraints on SW. Can it be a choice of the OS?
+  - Should be focusing on standard SW & distros.
+- Darius reiterated use of constant and transparent language
+- Ved said OS-A SEE must be useful. If OS vendors bypass it -> not useful.
+- Philipp indicated may be useful to punt out strict HW requirements to future Platform docs
+- Ved reminded need of HW discovery. Should be fine with ACPI or DT.
+- Future versions of OS-A SEE? Likely multiple future versions & releases to keep up with changes in dependent specs.
+- Greg suggests adapting philosophical approach: wants more prescriptive and limiting optionality
+- Key optionality question: interrupt solutions?
+
+## 2022/10/04
+
+- [Meeting Presentation](https://docs.google.com/presentation/d/1FPm5COOnTglsqOhWLFhQZD2onDmrxceyZPtIkKpTsqE/)
+- Attempted to go through SBI spec to determine what should be required or not for the SBI extensions. Good discussion ensued. Arrived at deferring to the SBI spec itself as it has mandatory vs optional. SBI spec also has extensions specific hypervisors vs regular booting. In the end may have to call out specific extensions being mandatory, but 1st pass is to defer to SBI spec.
+
 ##  2022/09/12
 
 - [Meeting Presentation](https://docs.google.com/presentation/d/1uW9OB3ocltpWJj8fYdfMOnNWHIAuTY-yxRH5MUYi6p8/edit)
