@@ -1,5 +1,19 @@
 # OS-A SEE TG Meeting Minutes
 
+## 2023/01/10
+
+- [Meeting Presentation](https://docs.google.com/presentation/d/1RDaw280y-5BX3dE4dmIUBlWI9yQptsSG9NDs2jiLXRw/edit#slide=id.p1)
+- Quickly went over potential changes to OS-A SEE Charter as discussed at Members' Day at RISC-V summit. Aaron to propose a new charter and send out to list.
+- Mark Himelstein requests OS-A SEE Ratification Plan to be presented to Chairs meeting in early Feb. Include proposed charter change as well.
+- Need a plan/description of how other specs compose into building a system. This can be a separate doc explaining how that fits/works together. e.g. Platforms
+  - Platform needs to be scoped and qualified. Need to start that discussion with broader community.
+- Andrei walked through his [proposal](https://docs.google.com/document/d/1X0TSbheEJjRGWhG2nzUnfIl_QcHWSuvd/edit?rtpof=true).
+  - Thinking is that this is equivalent to BBR as a base.
+  - Comprised of recipes.
+  - Plan to move to asciidoc. Aaron to put together a format to start filling things in. Will then use pull requests for changes.
+  - FFH ACPI bindings for RISC-V SBI. Proposal from Andrew is mid Feb.
+  - IOMMU ACPI [proposal](https://github.com/vlsunil/riscv-acpi/blob/iommu/rimt.adoc). Not sure if latest.
+- Meeting cadence to increase starting week of Jan 23.
 
 ## 2022/11/30
 
