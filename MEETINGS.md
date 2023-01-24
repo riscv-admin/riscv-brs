@@ -1,5 +1,20 @@
 # OS-A SEE TG Meeting Minutes
 
+## 2023/01/24
+
+- [Meeting Presentation](https://docs.google.com/presentation/d/14s74R9TMw3J6L50x9dgvlieRv7GkOjT_hb93w1r135w/edit#slide=id.p1)
+- Strawman Charter change led to discussion of naming. Large desire is to change the name but also include modifications that more closely cover the expected result.
+- OS-A SEE Name brought up again. People would like to see a name change. Possibly SEEI. "Common Boot Services" was also brought up. Mark Himelstein indicated we should at least reference and/or coordinate with existing specs in RISC-V.
+- Glossary of terms and definitions needed.
+- Platform vs OS-A SEE spec distinction came up again. People looking for definitive explanation of what type of requirements fall into Platform. OS-A SEE needs some hardware requirements to set expectatiosn, but much of the system (peripherals, etc) can be punted to the Platform.
+  - Paul W mentioned some hardware requirements are in the current proposal. Need to find and be precise in language.
+- Andrei asked in chat: Will there be a common SEE? Will an SEE for IoT differ from SEE for laptop or sensor? Did not touch on this during the meeting, but we should conclude on that.
+- Went over overview of proposals about the two receipes (HI and VI)
+  - Horizontally-Integrated and Vertially-Integrated names: Mark Himelstein does not like them.
+- Discussed requirements of spec organization. e.g. Unique identifiers given to each requirement so one can compose and drive tests against each item.
+- Concept of LBBR punted out until a need is there.
+- Briefly talked about ratifiction plan and requirements for testing as well as a proof of concept.
+
 ## 2023/01/10
 
 - [Meeting Presentation](https://docs.google.com/presentation/d/1RDaw280y-5BX3dE4dmIUBlWI9yQptsSG9NDs2jiLXRw/edit#slide=id.p1)
