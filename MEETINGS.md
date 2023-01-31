@@ -1,5 +1,10 @@
 # OS-A SEE TG Meeting Minutes
 
+## 2023/01/31
+- [Meeting Presentation](https://docs.google.com/presentation/d/1IMDUkH7IyxKEuKHJbjLBIWj81ERrAk-PSRS_xf9uGQw/edit#slide=id.p1)
+- Went over naming of spec since was contentious in the past. Seemed to get some consensus on BRS - Boot & Runtime Services.
+- Went over Platform interaction with BRS. Drew a picture and collaborated on changes. Group decided to have a base hardware requirement spec. That needs to be worked on/created.
+
 ## 2023/01/24
 
 - [Meeting Presentation](https://docs.google.com/presentation/d/14s74R9TMw3J6L50x9dgvlieRv7GkOjT_hb93w1r135w/edit#slide=id.p1)
