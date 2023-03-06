@@ -1,5 +1,11 @@
 # OS-A SEE TG Meeting Minutes
 
+## 2023/03/02
+- [Meeting Presentation](https://docs.google.com/presentation/d/1bVvfeK_ca-CcQQJVc72ayDvbYZqsuXnv74U7ZkCbosY/edit#slide=id.p1)
+- Make sure dependencies will be ratified and indicate expected multiple version releases.
+- Practical approach of going through industry standards and noting RISC-V specific items vs trying to fully interpret those in BRS spec.
+- Andrei indicated have a scaffolding of POC and beginnings of compliance test suite using virtual QEMU target. Within a month.
+
 ## 2023/01/31
 - [Meeting Presentation](https://docs.google.com/presentation/d/1IMDUkH7IyxKEuKHJbjLBIWj81ERrAk-PSRS_xf9uGQw/edit#slide=id.p1)
 - Went over naming of spec since was contentious in the past. Seemed to get some consensus on BRS - Boot & Runtime Services.
