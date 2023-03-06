@@ -1,5 +1,17 @@
 # OS-A SEE TG Meeting Minutes
 
+## 2023/03/06
+- [Meeting Presentation](https://docs.google.com/presentation/d/194mENUpAItyPr0TTddt47-UCL1Yw9f8Qr6ENW5YMyt0/edit#slide=id.p1)
+- Working session marking up Illustrative [proposal](https://docs.google.com/document/d/1X0TSbheEJjRGWhG2nzUnfIl_QcHWSuvd/edit?rtpof=true) with comments on what to include.
+- Be sure to include non-normative text about potential implications when something isn't adhered to. Lots of choices in these industry standards. Can also be framed as best practices.
+- Open Topic: are option roms a thing still? Philipp indicated ARM systems had shipped with an interpreter. There's also a QEMU implementation for running x86 on different architectures in firmware.
+- Focus on language usage for consistency of mandatory, recommended, etc.
+- GOP: example of acronym usage. Make sure the terms are defined.
+- Be explicit in what types of system the BRS spec is targetting. This came up about HS/S/U vs M/U type systems.
+- FW updates? What does the BRS have to say on this? Punt to Platform?
+- Include rationales for decisions on requirements to be informative to the reader.
+- SPCR, DBG2, and SBI DBCN interaction. Andrew Jones will go and do some homework and come back to us with suggestions.
+
 ## 2023/03/02
 - [Meeting Presentation](https://docs.google.com/presentation/d/1bVvfeK_ca-CcQQJVc72ayDvbYZqsuXnv74U7ZkCbosY/edit#slide=id.p1)
 - Make sure dependencies will be ratified and indicate expected multiple version releases.
