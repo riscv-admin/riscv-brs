@@ -1,5 +1,15 @@
 # OS-A SEE TG Meeting Minutes
 
+## 2023/03/13
+- [Meeting Presentation](https://docs.google.com/presentation/d/1DbqZOGnlbLAFENMEED18lrPiCW6KG8PwN0I9knx52i4/edit#slide=id.p1)
+- Quickly Review [PR](https://github.com/riscv-non-isa/riscv-os-a-see/pull/6)
+- Working session marking up Illustrative [proposal](https://docs.google.com/document/d/1X0TSbheEJjRGWhG2nzUnfIl_QcHWSuvd/edit?rtpof=true) with comments on what to include.
+- Darius noted 'solutions' and 'recipe' both used in intro. Focus on 'recipe' term alone.
+- Explain SEE, OS, and firmware roles in the description about who is implementing what. How to describe end product. Mark H said to describe state and interfaces between layers.
+- Paul noted specs have generally not mentioned motivations. Include such things for decisions.
+- Darius mentioned a picture would be helpful.
+- Sunil indicated ACPI 6.6 will have the RISC-V support.
+
 ## 2023/03/06
 - [Meeting Presentation](https://docs.google.com/presentation/d/194mENUpAItyPr0TTddt47-UCL1Yw9f8Qr6ENW5YMyt0/edit#slide=id.p1)
 - Working session marking up Illustrative [proposal](https://docs.google.com/document/d/1X0TSbheEJjRGWhG2nzUnfIl_QcHWSuvd/edit?rtpof=true) with comments on what to include.
