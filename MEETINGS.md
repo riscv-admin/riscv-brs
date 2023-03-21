@@ -1,5 +1,16 @@
 # OS-A SEE TG Meeting Minutes
 
+## 2023/03/20
+- [Meeting Presentation](https://docs.google.com/presentation/d/1yS0UAB90c59theFeujlwODZRDnm-4QiyiUKXB1PeQWM/edit#slide=id.p1)
+- Andrew provided an update on [SPCR](https://learn.microsoft.com/en-us/windows-hardware/drivers/serports/serial-port-console-redirection-table) investigation. Good conversation ensued.
+  - [Issue](https://bugzilla.redhat.com/show_bug.cgi?id=1661288) on aarch64 related to handling of default console in presenct of SPCR. Largley has to do w/ parsing SPCR and requesting it be the preferred console: acpi_parse_spcr(earlycon_acpi_spcr_enable, true)
+  - SPCR relies on [DBG2](https://learn.microsoft.com/en-us/windows-hardware/drivers/bringup/acpi-debug-port-table) for encoding Interface Type.
+  - Andrei to reach out to see if DBCN SBI encoding can be added to DBG2 as a Serial Port Subtype.
+  - Andrei also brought up potentially allocating an ACPI compatible ID to provide linkage of AML drivers to DBG2 encoding to deal w/ the early->regular console handoff.
+  - Andrei also wants the UEFI forum to own the SPCR table.
+- Andrei to take a stab at ACPI section of BRS spec.
+- Aaron to add in a Implementers Guide appendix to stash non-normative information about industry standards.
+
 ## 2023/03/13
 - [Meeting Presentation](https://docs.google.com/presentation/d/1DbqZOGnlbLAFENMEED18lrPiCW6KG8PwN0I9knx52i4/edit#slide=id.p1)
 - Quickly Review [PR](https://github.com/riscv-non-isa/riscv-os-a-see/pull/6)
